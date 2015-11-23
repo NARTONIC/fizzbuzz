@@ -1,0 +1,41 @@
+<html>
+<head>
+<script>
+
+var number = prompt("Introduce tu numero del 1 al 100");
+
+
+
+	if(parseInt(number)){
+		fizzbuzzer(number);
+	} else {
+		window.location.reload(false); 
+	}
+
+
+function fizzbuzzer(max) {
+
+  function check(n) {
+    var msg = '';
+    if ( n % 3 == 0 ) { msg += "Fizz " };
+    if ( n % 5 == 0 ) { msg += "Buzz " };
+    if ( n % 15 == 0 ) { msg += "fizzbuzzer "}
+    return msg || n;
+  }
+
+  for (var i = 1; i <= max; i++) {
+    document.write(check(i));
+  }
+
+}
+
+
+
+
+
+
+
+
+</script>
+</head>
+</html>
